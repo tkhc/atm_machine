@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ATM Machine</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+</head>
+
+<body>
+  <div class="container h-80">
+    <div class="row align-items-center h-100">
+      <div class="col-3 mx-auto">
+        <div class="text-center">
+          <h1>ATM Machine</h1>
+          <p id="displayAlerts"></p>
+          <p id="displayBalance"></p>
+          <div id="login">
+            <div>
+              <label for="loginPin">Enter existing PIN</label>
+              <input type="password" id="loginPin" /><button
+                onclick="loginPin()"
+                id="loginPinBtn"
+              >
+                Submit
+              </button>
+            </div>
+            <div>
+              <label for="createPin">Enter PIN to Create New Account</label>
+              <input type="password" id="createPin" /><button
+                onclick="createPin()"
+                id="createPinBtn"
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          id="withdrawalDeposit"
+          style="display: none"
+        >
+          <div>
+            <label for="withdrawalInput">Enter withdrawal amount</label>
+            <input type="text" id="withdrawalInput" /><button
+              onclick="withdrawal()"
+              id="withdrawalBtn"
+            >
+              Submit
+            </button>
+          </div>
+          <div>
+            <label for="depositInput">Enter deposit amount</label>
+            <input type="text" id="depositInput" /><button
+              onclick="deposit()"
+              id="depositBtn"
+            >
+              Submit
+            </button>
+          </div>
+          <div>
+            <label for="updatePin">Update PIN</label>
+            <input type="text" id="updatePin" /><button
+              onclick="updatePin()"
+              id="updatePinBtn"
+            >
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
